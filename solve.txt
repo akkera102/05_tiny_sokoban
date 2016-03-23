@@ -1,0 +1,63 @@
+# Sokoban Automatic Solver Ver7.2.2 (JAN/2008) by Takaken
+# Options: TimeLimit=600sec / Memory=2508MB(auto) / BeginEnd=On
+# LevelSetName = ClipBoard (2016/03/21 23:39:34 Start)
+   1 [ 7* 7( 3)] Ok   0sec   88moves  14pushes luuRlluRurrrddLLrruullldlddrdrrUdlluluururrrddLddlluUddrruuLUdrddlluluuRuRDllddrUddrruuL
+   2 [ 7* 7( 3)] Ok   0sec   96moves  20pushes lddllddrUluuurrddLdlUrruurrddLdLUlldRurrruullllDDrrUdlluurRddlddlUUrrrdLullddrUruuullDDRdrUrruuL
+   3 [ 7* 8( 3)] Ok   0sec   52moves  13pushes ddlldddlUruurruulDrdLuLDDDuulluRRdddlUruulldRurDrruL
+   4 [ 7* 8( 3)] Ok   0sec   38moves  17pushes dlLruulDLDlddrUUlUUdRRRdrUUdllldRRdrUU
+   5 [ 8* 8( 3)] Ok   0sec   85moves  26pushes dlDurrdLdLLrUdldlluurDDurruruulDDrdLLdlluRdrdrUUUdLdlluurDldRurruruulDDrdLLLdlUrrrdLL
+   6 [ 8* 6( 3)] Ok   0sec   65moves  15pushes uluurDrrrrddLLUdrruulLLulldRlddrUdRRlluUluRdddrruuLrddlluUrrrrddL
+   7 [ 7* 8( 3)] Ok   0sec   77moves  16pushes dlluluuRDDlddrruruuLrddldlluRuluurDDurrruullDldRRdrUUdllldlddrUUluurrdrddLdlU
+   8 [ 8* 7( 3)] Ok   0sec   80moves  18pushes lDDuurrddLrrddllULUUddrdrruuluulLLdlddRRuuurrddLruulldllddrrUUluRRlddrrrddllUluR
+   9 [ 7* 7( 3)] Ok   0sec   57moves  16pushes ddllUluRRlluurrDullddrddrruruuLDLLdlUUdrrUdlddrrUruLLLdlU
+  10 [ 7* 8( 3)] Ok   0sec   49moves  13pushes UdrUlluuurrdrrddLLrruullDLDRllUUdrrdddlUUruurrddL
+  11 [ 8* 7( 3)] Ok   0sec  128moves  30pushes uurrrrrddLddrUUluullddRluurrdDuullllddRRuurrddrddlUULLuullddRRuurrrDDlddrUluUruLLLLrrrdddrUluullddRluurrdDrddlUUlluurrrDDlUdddrU
+  12 [ 8* 8( 3)] Ok   0sec   64moves  14pushes lluUUdddrrUdlluurRurrdLLddlluuuRldddrruuLuRllDDurrrruLLdlluluurD
+  13 [ 8* 7( 3)] Ok   0sec   56moves  14pushes rddddllUURlddrruUluulDrdLuurrDDurrdLLulldddrrUUruLullddR
+  14 [ 7* 8( 3)] Ok   0sec   93moves  20pushes llldRurruullDldRdddrrUUUdLrddlluUluururrDDDllddrrUruLuuulldDDDuuuurrddLruulldlddrUrrdLuruullD
+  15 [ 8* 7( 3)] Ok   0sec   60moves  14pushes uurRllddrrUrRurDllldlluururDRlllddrrUruLLrrdrruLLrdddrUUlulL
+  16 [ 8* 8( 3)] Ok   0sec   94moves  26pushes ldDDrruuLLddllddrUluRRuurrddLLuuulldRurDDurrddldLUUdrruululldRRldddLdlluRuRlddrUrUUUdddlluRdrU
+  17 [ 8* 8( 3)] Ok   0sec   58moves  20pushes ddDRRRlddlUUUdlldRurrddlUruLuluurDDDrddlUlUUruulDrdDldRdrU
+  18 [ 7* 7( 3)] Ok   0sec   69moves  17pushes luRlluuurrdDLruulldDrddrUUrrdLLulluurrDullddrRddllUUUdrrdrruLLddlluRR
+  19 [ 7* 7( 3)] Ok   0sec   62moves  17pushes rdrUUrrddLLrUllldRRurruuullDDuurrdddlLuRdrUdlldlluRRurrddLUluR
+  20 [ 8* 8( 3)] Ok   0sec   87moves  18pushes llldddrruRldlluRluurDDldRuuurrddLruulldlddrUrDldRuuruullDDDrddrruruuLLLdlUrddRluuruullD
+  21 [ 7* 7( 3)] Ok   0sec   89moves  19pushes drdLLrrddllUdrruuululldlddRUluurrrddLLdlUrrrrddllUluRRurDDuulullDurrddldlluRRluulDrdrRurD
+  22 [ 8* 6( 3)] Ok   0sec   76moves  27pushes LLUdrruLLLuurDllldRdRRULdlUrrrrdLLuluurDldlluRdrUdRdrruLLullddRRlUruLrdrrdLL
+  23 [ 8* 8( 3)] Ok   0sec   54moves  17pushes DurrDDDuuulldRRurDlddrrddllUUUUruLrdDldRuullllddrUluRR
+  24 [ 8* 8( 3)] Ok   0sec   82moves  22pushes ruLruulldlddlluRdrURuurrddLLLruurruulDrdddllldlluRRRuulDrdLrRdrUUUddllldlluRRRRdrU
+  25 [ 8* 8( 3)] Ok   0sec   77moves  18pushes lllululuurrdrrDDrdLuuullullddrUluRdddrddlUUUluurDrrrdddLLulUluRRlddrddlUUUluR
+  26 [ 8* 8( 3)] Ok   0sec   58moves  23pushes UUruLddLLUUdlldRRRdrUlluuRuulDDDldRRdrruLruuLrddlUdLLulldR
+  27 [ 8* 7( 3)] Ok   0sec   82moves  20pushes dlLuullddRRRdrruLuLDllluurrDrdLrrddlUruulldRurDDldRuuullullddRRurrddlUddlUUlluurrD
+  28 [ 8* 8( 3)] Ok   0sec  115moves  24pushes urrdddlLdlUrrruuulldDDrrddllUluRRluuurrddDlllluuRlddrrrruuullDDuurrdddlLddrrUUUUruLdddlluullddRRRllluRurDlddrdrruUU
+  29 [ 8* 6( 3)] Ok   0sec   51moves  24pushes dLLLrUdrruLuLLulDlddRUdRRRuullulDDldRRRUruLLulDDldR
+  30 [ 8* 7( 3)] Ok   0sec  118moves  19pushes dDuurrrdddlUruulllddRRdrUllluurrDullddrRlllddrUluururrddlLdlUruurrrrdLulllddrrdrUllluurrDurrdLdLLrruullldDuurrDullddrR
+  31 [ 8* 8( 3)] Ok   0sec   73moves  19pushes uurrrDDDuLLdlUrrruullllldddRRurrdddrUUUllldRurDlllluuurrDDrdLLrrrrddlUruL
+  32 [ 8* 8( 3)] Ok   0sec  114moves  28pushes rrddlddrrUUddlllluRdrrruullDurrddlLuurrruLdlldlldRRuurruullDurDrdddLLulldRRuUddRdrUUUruLullDDDuuurrddddlLuuuRurDDD
+  33 [ 7* 8( 3)] Ok   0sec   91moves  23pushes rruuLDDuuulldRurDrddllURRdrddllUUruLurrDDDuuullulldRurDrddllUdrruululldRdRdrruulDlluurDldRR
+  34 [ 8* 8( 3)] Ok   0sec   80moves  16pushes uuuluurDDDuuRRdrruLLLulldddddrrrrUUddlllluuuuurrdrrrdLullullddrdDldRRRlluuuluurD
+  35 [ 8* 6( 3)] Ok   0sec   79moves  21pushes ldRRRULdlUrrrrdLLLulluurrrDulllddrrdrruLuullldddRRluUluRdddrRuuuLrddLdlUrrrrdLL
+  36 [ 8* 8( 3)] Ok   0sec   86moves  30pushes dRRDDurruLLLulDrrddLddrUUUruLLulldRRRdrruulDllllddRRdrUUdrUruulDLddrUdlllUUluRdddrruuL
+  37 [ 8* 8( 3)] Ok   0sec   83moves  24pushes ulldldLruulDDDuuurrrrdLLullddrUluRddldlddrUUUruulDDuurRdldlDlddrUUUruulDlDDuRdddlUU
+  38 [ 7* 8( 3)] Ok   0sec   92moves  20pushes ddrddlLulUUUluRddddrdrruuluLrdrddlluluUluurDDrrdrddllulldRRulUUluurDDDDrdLuuurrdrddLruuluuuL
+  39 [ 8* 7( 3)] Ok   0sec   87moves  17pushes dddlluuuRRRurDrddLLrruullllldddrrUUddlluuurRRllldRlddrruUdrrruuulldLrurrdLrddlUUddlluuR
+  40 [ 8* 6( 3)] Ok   0sec   55moves  15pushes dllULuurDldRdrruuLrddlluRdrUlllulldRRRdrruLuLLrrddlUruL
+  41 [ 8* 7( 3)] Ok   0sec   84moves  22pushes rdDldlluRdrUruulDDlddrrUUlldllluRRRddrruLruLuurDDlddlluuRlddrruUruulDDllddrrrUUlDrdL
+  42 [ 8* 8( 3)] Ok   0sec   69moves  19pushes uulLLrruurDDDDuullluRdrruulDDDrdLuuullullddRRRurrddlUruLLrddddlluRdrU
+  43 [ 8* 8( 3)] Ok   0sec   81moves  20pushes rdDDrdLuLLrruullDlDRRlllddrrrUrUUddldllluurururRllddRddllUluRRlddrrurUUddldlluurR
+  44 [ 8* 8( 3)] Ok   0sec   83moves  19pushes lllddRRRllluurDDDurrdddllluRRdrUdrruuuLLLrrrdddllulluUluurDDDurrrrdddllulLuuuurDldR
+  45 [ 8* 8( 3)] Ok   0sec   71moves  18pushes RRdrruLLuurDDrdddlLLulldRuluurRRdRUllllddrdRulluurrrrrDDuulluurDlddrruL
+  46 [ 8* 8( 3)] Ok   0sec   85moves  22pushes dlddrddlluluuRDDurrddlLLuurrrUdlluRuurrdLulDDldddrruuLLulDDurrrUluurrdLulDDrdLLulDrdL
+  47 [ 8* 7( 3)] Ok   0sec   57moves  16pushes llDlddRUluRdddrruLdlUluullddRRRRlluururrdLLLddrUUddllluuR
+  48 [ 8* 7( 3)] Ok   0sec  101moves  20pushes dlDrdLLLuuRlddrruruulDllullddRluurrdrrrddllldlUrrrruulllDuullddRdRRlUUrrrddLLrruullldlddrUrrruulDrdLL
+  49 [ 7* 7( 3)] Ok   0sec   69moves  15pushes uulllldDuurrrrddLrddlUUruullllddrRRdrUlllluurrrDDllddlUUrrrrddlUruLLL
+  50 [ 8* 8( 3)] Ok   0sec  105moves  26pushes lLrddlUlluurDRRllldRRululuurDDlddrruLdlUUrdrddrrruuLLLdlluurDldRurrrrddllULulldRurRllulUrddrrddrruuLLLrdL
+  51 [ 8* 7( 3)] Ok   0sec  104moves  20pushes uulllddRRlluurrrrrdddllUllluurrDurrrdddlluLuRRurDDDuuulllllddRRurrrddllUluRRurDlldddllUdrruuuulllddRRurD
+  52 [ 8* 8( 3)] Ok   0sec  125moves  23pushes urrUUdRuuLdddddrrruuuLLulllddrrUruLddlldRururrrdddlllUluluuRRurDldRulllddrdrUUruLddddrrruuuLrdddllluulluuuRldddrruuLulDDurrdR
+---------------- (2016/03/21 23:40:00 Finish)
+Solved    =   52
+Cancel(-) =    0
+Failed(X) =    0
+Skips (?) =    0
+----------------
+Total     =   52
+
