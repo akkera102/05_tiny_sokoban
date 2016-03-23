@@ -29,7 +29,7 @@ My project/solve.txt. Don't tell to anyone. :)
  
 
 
-## My development
+## Development
 compiler        : windows Arduino IDE 1.6.8(avr-gcc) + 1.0.6(make.exe)
 image converter : python 2.6 + PIL
 etc             : Visual Studio 2015 C#
