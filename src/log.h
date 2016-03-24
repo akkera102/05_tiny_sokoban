@@ -11,7 +11,7 @@ extern "C" {
 //---------------------------------------------------------------------------
 
 typedef struct {
-	u8 lv[TXT_LV_MAX_CNT];
+	u8 lvEnd[TXT_LV_MAX_CNT];
 	s8 idx;
 	s8 sel;
 

@@ -21,8 +21,8 @@ typedef struct {
 void MenuInit(void);
 void MenuExec(void);
 void MenuDraw(void);
-void MenuSeek(s8 move);
 
+void MenuSeek(s8 move);
 bool MenuIsEnd(void);
 
 void MenuLoad(void);

@@ -27,7 +27,7 @@ void EepWrite8(u8 dat);
 void EepWrite16(u16 dat);
 void EepWrite32(u32 dat);
 
-void EeepWriteAdr8(u8 adr, u8 dat);
+void EepWriteAdr8(u8 adr, u8 dat);
 
 #ifdef __cplusplus
 }

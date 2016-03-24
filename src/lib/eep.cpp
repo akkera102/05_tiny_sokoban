@@ -64,7 +64,7 @@ void EepWrite32(u32 dat)
 	EepWrite8((dat >> 24) & 0xff);
 }
 //---------------------------------------------------------------------------
-void EeepWriteAdr8(u8 adr, u8 dat)
+void EepWriteAdr8(u8 adr, u8 dat)
 {
 	EepSeek(adr);
 	EepWrite8(dat);

@@ -29,10 +29,10 @@ void LvDraw(void);
 void LvSetRes(u8 no);
 void LvSetResCode(void);
 void LvSetResWall(void);
-
 void LvSetCode(u8 x, u8 y, u8 code);
 void LvSetCodeTurnChr(u8 x, u8 y);
 void LvSetCodeTurnBox(u8 x, u8 y);
+
 u8   LvGetCode(u8 x, u8 y);
 s8   LvGetNo(void);
 

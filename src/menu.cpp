@@ -70,7 +70,6 @@ void MenuDraw(void)
 	u8 no;
 	s8 y;
 
-
 	for(y=0; y<7; y++)
 	{
 		no = Menu.idx + y;

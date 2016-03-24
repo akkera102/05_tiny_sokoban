@@ -32,9 +32,10 @@ typedef struct {
 	bool isBox;
 	bool isEnd;
 
-	u16  move;					// 移動カウンタ
-	s8   cnt;					// 移動バッファカウンタ
-	s8   cur;					// 移動バッファカーソル
+	u16  moveCnt;				// 移動カウンタ
+
+	s8   bufCnt;				// 移動バッファカウンタ
+	s8   bufCur;				// 移動バッファカーソル
 	ST_ANIME_MOVE m;
 
 } ST_ANIME;
@@ -54,8 +55,8 @@ void AnimeCalcMoveU(void);
 void AnimeCalcMoveD(void);
 void AnimeCalcMoveL(void);
 void AnimeCalcMoveR(void);
-
 void AnimeCalcPrev(void);
+
 void AnimeAddHistory(s8 tx, s8 ty, bool isBox);
 
 bool AnimeIsEnd(void);

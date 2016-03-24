@@ -110,12 +110,12 @@ void PlayDrawQuit(void)
 	OledDrawStr(2, 4, "Quit ?");
 }
 //---------------------------------------------------------------------------
-bool PlayIsEnd(void)
-{
-	return Play.isEnd;
-}
-//---------------------------------------------------------------------------
 void PlaySetAct(u8 act)
 {
 	Play.act = act;
+}
+//---------------------------------------------------------------------------
+bool PlayIsEnd(void)
+{
+	return Play.isEnd;
 }

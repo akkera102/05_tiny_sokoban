@@ -75,7 +75,7 @@ void AnimeSetChr(u8 x, u8 y)
 //---------------------------------------------------------------------------
 u16 AnimeGetMoveCnt(void)
 {
-	return Anime.move;
+	return Anime.moveCnt;
 }
 //---------------------------------------------------------------------------
 void AnimeCalcMove(s8 tx, s8 ty)
@@ -98,7 +98,6 @@ void AnimeCalcMove(s8 tx, s8 ty)
 			return;
 		}
 	}
-
 
 	// à⁄ìÆèÄîı
 	Anime.tx    = tx;
@@ -137,24 +136,24 @@ void AnimeCalcMoveR(void)
 //---------------------------------------------------------------------------
 void AnimeCalcPrev(void)
 {
-	if(Anime.cnt == 0)
+	if(Anime.bufCnt == 0)
 	{
 		return;
 	}
-	Anime.cnt--;
+	Anime.bufCnt--;
 
-	if(Anime.cur == 0)
+	if(Anime.bufCur == 0)
 	{
-		Anime.cur = ANIME_MAX_MOVE_CNT;
+		Anime.bufCur = ANIME_MAX_MOVE_CNT;
 	}
-	Anime.cur--;
+	Anime.bufCur--;
 
-	Anime.move--;
+	Anime.moveCnt--;
 
 
-	s8 tx   = Anime.m.tx[Anime.cur];
-	s8 ty   = Anime.m.ty[Anime.cur];
-	bool is = Anime.m.isBox[Anime.cur];
+	s8 tx   = Anime.m.tx[Anime.bufCur];
+	s8 ty   = Anime.m.ty[Anime.bufCur];
+	bool is = Anime.m.isBox[Anime.bufCur];
 
 	Anime.tx    = tx * -1;
 	Anime.ty    = ty * -1;
@@ -169,18 +168,18 @@ void AnimeCalcPrev(void)
 //---------------------------------------------------------------------------
 void AnimeAddHistory(s8 tx, s8 ty, bool isBox)
 {
-	Anime.m.tx[Anime.cur] = tx;
-	Anime.m.ty[Anime.cur] = ty;
-	Anime.m.isBox[Anime.cur] = isBox;
+	Anime.m.tx[Anime.bufCur]    = tx;
+	Anime.m.ty[Anime.bufCur]    = ty;
+	Anime.m.isBox[Anime.bufCur] = isBox;
 
-	Anime.move++;
+	Anime.moveCnt++;
 
-	Anime.cur++;
-	Anime.cur %= ANIME_MAX_MOVE_CNT;
+	Anime.bufCur++;
+	Anime.bufCur %= ANIME_MAX_MOVE_CNT;
 
-	if(Anime.cnt < ANIME_MAX_MOVE_CNT-1)
+	if(Anime.bufCnt < ANIME_MAX_MOVE_CNT-1)
 	{
-		Anime.cnt++;
+		Anime.bufCnt++;
 	}
 }
 //---------------------------------------------------------------------------

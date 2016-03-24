@@ -34,8 +34,8 @@ void PlayDraw(void);
 void PlayDrawGame(void);
 void PlayDrawQuit(void);
 
-bool PlayIsEnd(void);
 void PlaySetAct(u8 act);
+bool PlayIsEnd(void);
 
 
 #ifdef __cplusplus

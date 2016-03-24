@@ -70,7 +70,7 @@ void LogLoad(void)
 
 	for(i=0; i<TXT_LV_MAX_CNT; i++)
 	{
-		Log.lv[i] = EepRead8();
+		Log.lvEnd[i] = EepRead8();
 	}
 }
 //---------------------------------------------------------------------------
@@ -78,19 +78,19 @@ void LogSaveLvEnd(u8 no)
 {
 	ASSERT(no < TXT_LV_MAX_CNT);
 
-	EeepWriteAdr8(0x5, ' ');
-	EeepWriteAdr8(0x10 + no, 0x01);
-	EeepWriteAdr8(0x5, 'W');
+	EepWriteAdr8(0x5, ' ');
+	EepWriteAdr8(0x10 + no, 0x01);
+	EepWriteAdr8(0x5, 'W');
 
-	Log.lv[no] = 0x01;
+	Log.lvEnd[no] = 0x01;
 }
 //---------------------------------------------------------------------------
 void LogSaveMenu(s8 idx, s8 sel)
 {
-	EeepWriteAdr8(0x5, ' ');
-	EeepWriteAdr8(0x50, idx);
-	EeepWriteAdr8(0x51, sel);
-	EeepWriteAdr8(0x5, 'W');
+	EepWriteAdr8(0x5, ' ');
+	EepWriteAdr8(0x50, idx);
+	EepWriteAdr8(0x51, sel);
+	EepWriteAdr8(0x5, 'W');
 
 	Log.idx = idx;
 	Log.sel = sel;
@@ -108,7 +108,7 @@ s8 LogGetMenuSel(void)
 //---------------------------------------------------------------------------
 bool LogIsLvEnd(u8 no)
 {
-	return (Log.lv[no] == 0x01) ? TRUE : FALSE;
+	return (Log.lvEnd[no] == 0x01) ? TRUE : FALSE;
 }
 //---------------------------------------------------------------------------
 bool LogIsExist(void)
