@@ -4,21 +4,13 @@
 extern "C" {
 #endif
 
-
-// ch0 timer3(16bit) pin:A2
-// ch1 timer1(16bit) pin:A3
-
 // ISR(TIMER3_COMPA_vect)
 // ISR(TIMER1_COMPA_vect)
 
-
-#include <pins_arduino.h>
 #include "common.h"
 
 //---------------------------------------------------------------------------
 #define SND_MAX_CHANNEL			2
-#define SND_PIN_CH1				A2		// pins_arduino.h
-#define SND_PIN_CH2				A3
 
 enum {
 	SND_OP_PLAY_NOTE = 0x90,
@@ -27,6 +19,18 @@ enum {
 	SND_OP_STOP      = 0xf0,
 };
 
+//---------------------------------------------------------------------------
+#if defined(ARDUBOY_10)
+
+	#define SND_PIN1 5			// PC6
+	#define SND_PIN2 13			// PC7
+
+#elif defined(ARDUBOY_DEVKIT)
+
+	#define SND_PIN1 A2
+	#define SND_PIN2 A3
+
+#endif
 
 //---------------------------------------------------------------------------
 typedef struct {

@@ -22,9 +22,19 @@ void KeyLoop(void)
 {
 	u8 cnt;
 
-	cnt =  ((~PINB) & 0x70);		// down, left, up
-	cnt |= ((~PINC) & 0x40) >> 4;	// right
-	cnt |= ((~PINF) & 0xc0) >> 6;	// A, B
+#if defined(ARDUBOY_10)
+
+	cnt  = ((~PINF) & 0xf0);			// up, down, left, right
+	cnt |= ((~PINE) & 0x40) >> 3;		// A
+	cnt |= ((~PINB) & 0x10) >> 2;		// B
+
+#elif defined(ARDUBOY_DEVKIT)
+
+	cnt  = ((~PINB) & 0x70);			// down, left, up
+	cnt |= ((~PINC) & 0x40) >> 4;		// right
+	cnt |= ((~PINF) & 0xc0) >> 6;		// A, B
+
+#endif
 
 	Key.trg = (Key.trg ^ cnt) & ~Key.cnt;
 	Key.off = ~cnt & Key.cnt;

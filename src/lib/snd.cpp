@@ -14,22 +14,27 @@ PROGMEM const unsigned int SndMidiNoteFreq[128] = {
 	10548,11175,11840,12544,13290,14080,14917,15804,16744,17740,18795,19912,21096,
 	22351,23680,25088
 };
-
 //---------------------------------------------------------------------------
 ST_SND Snd;
+
 
 //---------------------------------------------------------------------------
 void SndInit(void)
 {
-	_Memset(&Snd,   0x00, sizeof(ST_SND));
+	_Memset(&Snd, 0x00, sizeof(ST_SND));
 
-	pinMode(SND_PIN_CH1, OUTPUT);
-	pinMode(SND_PIN_CH2, OUTPUT);
+	pinMode(SND_PIN1, OUTPUT);
+	Snd.ch[0].pPinPort = portOutputRegister(digitalPinToPort(SND_PIN1));
+	Snd.ch[0].pinMask  = digitalPinToBitMask(SND_PIN1);
 
-	Snd.ch[0].pPinPort = portOutputRegister(digitalPinToPort(SND_PIN_CH1));
-	Snd.ch[0].pinMask  = digitalPinToBitMask(SND_PIN_CH1);
-	Snd.ch[1].pPinPort = portOutputRegister(digitalPinToPort(SND_PIN_CH2));
-	Snd.ch[1].pinMask  = digitalPinToBitMask(SND_PIN_CH2);
+#if defined(ARDUBOY_10)
+
+	pinMode(SND_PIN2, OUTPUT);
+	Snd.ch[1].pPinPort = portOutputRegister(digitalPinToPort(SND_PIN2));
+	Snd.ch[1].pinMask  = digitalPinToBitMask(SND_PIN2);
+
+#endif
+
 
 	TCCR3A = 0;
 	TCCR3B = 0;
@@ -208,13 +213,20 @@ void SndStopTimer(u8 ch)
 	if(ch == 0)
 	{
 		TIMSK3 &= ~(1 << OCIE3A);
+		*Snd.ch[0].pPinPort &= ~Snd.ch[0].pinMask;
 	}
 	else
 	{
 		TIMSK1 &= ~(1 << OCIE1A);
+
+#if defined(ARDUBOY_10)
+
+		*Snd.ch[1].pPinPort &= ~Snd.ch[1].pinMask;
+
+#endif
+
 	}
 
-	*Snd.ch[ch].pPinPort &= ~Snd.ch[ch].pinMask;
 }
 //---------------------------------------------------------------------------
 // TIMER 3 ch0
@@ -236,7 +248,12 @@ ISR(TIMER3_COMPA_vect)
 // TIMER 1 ch1
 ISR(TIMER1_COMPA_vect)
 {
+
+#if defined(ARDUBOY_10)
+
 	*Snd.ch[1].pPinPort ^= Snd.ch[1].pinMask;
+
+#endif
 
 
 	if(Snd.isTonePlay == FALSE)

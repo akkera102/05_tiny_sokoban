@@ -7,10 +7,7 @@ extern "C" {
 #include "common.h"
 
 //---------------------------------------------------------------------------
-#define OLED_WHITE				1
-#define OLED_BLACK				0
-
-#define OLED_FONT_CX			6
+#define OLED_FONT_CX			5
 #define OLED_FONT_CY			8
 #define OLED_FONT_SIZE			5
 
@@ -19,9 +16,20 @@ extern "C" {
 #define OLED_SCREEN_FONT_CX		(OLED_SCREEN_CX / OLED_FONT_CX)
 #define OLED_SCREEN_FONT_CY		(OLED_SCREEN_CY / OLED_FONT_CY)
 
-#define OLED_PIN_CS				6
-#define OLED_PIN_DC				4
-#define OLED_PIN_RST			12
+//---------------------------------------------------------------------------
+#if defined(ARDUBOY_10)
+
+	#define OLED_PIN_CS			12
+	#define OLED_PIN_DC			4
+	#define OLED_PIN_RST		6
+
+#elif defined(ARDUBOY_DEVKIT)
+
+	#define OLED_PIN_CS			6
+	#define OLED_PIN_DC			4
+	#define OLED_PIN_RST		12
+
+#endif
 
 //---------------------------------------------------------------------------
 typedef struct {
