@@ -9,6 +9,8 @@ First game, I hope to you play lv3 or lv4. Lv1-2 is hell.
 
 
 ## Installation
+Request : Arduino IDE 1.6.x
+
 1. download from github
 2. pls edit test.bat(windows) or test.sh(osx) for your computer(must change COM port number)
 3. execute test.bat
