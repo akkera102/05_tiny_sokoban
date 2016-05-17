@@ -16,6 +16,7 @@ Request : "windows" Arduino IDE 1.6.x
 3. execute test.bat
 4. play it
 
+on OSX - edit test.sh and verify path to the arduino toolkit and path to the serial port device (it will show up as a file in /dev upon connectino and powerup of the arduboy)
 
 ## Controls
 dir : move
