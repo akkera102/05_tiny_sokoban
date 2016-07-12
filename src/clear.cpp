@@ -14,7 +14,7 @@ void ClearInit(void)
 //---------------------------------------------------------------------------
 void ClearExec(void)
 {
-	if(KeyGetTrg() & KEY_A)
+	if(KeyGetTrg() & KEY_B)
 	{
 		Clear.isEnd = TRUE;
 	}

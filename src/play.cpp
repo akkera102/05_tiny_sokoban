@@ -35,11 +35,11 @@ void PlayExecGame(void)
 {
 	u8 rep = KeyGetRep();
 
-	if(KeyGetTrg() & KEY_B)
+	if(KeyGetTrg() & KEY_A)
 	{
 		PlaySetAct(PLAY_EXEC_QUIT);
 	}
-	else if(rep & KEY_A)
+	else if(rep & KEY_B)
 	{
 		AnimeCalcPrev();
 	}
@@ -65,11 +65,11 @@ void PlayExecQuit(void)
 {
 	u8 trg = KeyGetTrg();
 
-	if(trg & KEY_B)
+	if(trg & KEY_A)
 	{
 		PlaySetAct(PLAY_EXEC_GAME);
 	}
-	else if(trg & KEY_A)
+	else if(trg & KEY_B)
 	{
 		Play.isEnd = TRUE;
 	}
