@@ -17,7 +17,7 @@ void MenuInit(void)
 //---------------------------------------------------------------------------
 void MenuExec(void)
 {
-	if(KeyGetTrg() & KEY_A)
+	if(KeyGetTrg() & KEY_B)
 	{
 		Menu.isEnd = TRUE;
 		return;

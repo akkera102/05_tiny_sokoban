@@ -9,14 +9,13 @@ First game, I hope to you play lv3 or lv4. Lv1-2 is hell.
 
 
 ## Installation
-Request : "windows" Arduino IDE 1.6.x
+Request : Arduino IDE 1.6.x
 
 1. download from github
-2. pls edit test.bat for your computer(must change COM port number)
+2. pls edit test.bat(windows) or test.sh(osx) for your computer(must change COM port number)
 3. execute test.bat
 4. play it
 
-on OSX - edit test.sh and verify path to the arduino toolkit and path to the serial port device (it will show up as a file in /dev upon connectino and powerup of the arduboy)
 
 ## Controls
 dir : move
@@ -36,6 +35,8 @@ etc             : Visual Studio 2015 C#
 
 
 ## History
+v1.03 2016/07/12    fix button A, B
+v1.02 2016/05/17    support osx. thank you kubatyszko!
 v1.01 2016/05/15    support arduboy 1.0
 v1.00 2016/03/23    first version
 
