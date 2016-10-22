@@ -1,5 +1,7 @@
 #!/bin/bash
 
+export uart=/dev/tty.usbserial
+
 if [ `uname -s` = "Darwin" ]; then
 	export avrdudeconf=/Applications/Arduino.app/Contents/Java/hardware/tools/avr/etc/avrdude.conf
 	export uart=/dev/tty.usbmodem1421
@@ -13,8 +15,7 @@ else
 			exit
 		fi
 	fi
-	export uart=/dev/tty.usbserial
-	python -c "import serial;ser=serial.Serial(sys.argv[1],1200);ser.write('');ser.close()" - $uart
+	python -c "import serial;import sys;ser=serial.Serial(sys.argv[1],1200);ser.write('');ser.close()" $uart
 fi
 
 export hexfile=test.hex
