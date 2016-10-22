@@ -5,9 +5,16 @@ if [ `uname -s` = "Darwin" ]; then
 	export uart=/dev/tty.usbmodem1421
 	python -c "import serial;ser=serial.Serial('/dev/tty.usbmodem1421',1200);ser.write('');ser.close()"
 else
-	export avrdudeconf=/opt/arduino/tools/avr/etc/avrdude.conf
+	export avrdudeconf=/usr/share/arduino/hardware/tools/avrdude.conf
+	if [ ! -f $avrdudeconf ]; then
+		export avrdudeconf=/etc/avrdude.conf
+		if ! [ -f $avrdudeconf ]; then
+			echo "Couldn't find avrdudeconf - make sure you have arduino IDE installed and edit this file to provide the path"
+			exit
+		fi
+	fi
 	export uart=/dev/tty.usbserial
-	python -c "import serial;ser=serial.Serial('/dev/tty.usbserial',1200);ser.write('');ser.close()"
+	python -c "import serial;ser=serial.Serial(sys.argv[1],1200);ser.write('');ser.close()" - $uart
 fi
 
 export hexfile=test.hex
