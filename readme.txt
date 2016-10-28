@@ -35,6 +35,7 @@ etc             : Visual Studio 2015 C#
 
 
 ## History
+v1.04 2016/10/28    fix script CRLF. thank you again kubatyszko!
 v1.03 2016/07/12    fix button A, B
 v1.02 2016/05/17    support osx. thank you kubatyszko!
 v1.01 2016/05/15    support arduboy 1.0
