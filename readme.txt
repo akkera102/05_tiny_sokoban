@@ -29,21 +29,13 @@ My project/solve.txt. Don't tell to anyone. :)
 
 
 ## Development
-compiler        : windows Arduino IDE 1.6.8(avr-gcc) + 1.0.6(make.exe)
+compiler        : windows Arduino IDE 1.8.13(avr-gcc) + 1.0.6(make.exe)
 image converter : python 2.6 + PIL
 etc             : Visual Studio 2015 C#
 
 
 ## License
 GPL v2
-
-
-## History
-v1.04 2016/10/28    fix script CRLF. thank you again kubatyszko!
-v1.03 2016/07/12    fix button A, B
-v1.02 2016/05/17    support osx. thank you kubatyszko!
-v1.01 2016/05/15    support arduboy 1.0
-v1.00 2016/03/23    first version
 
 
 ## Document
@@ -58,15 +50,3 @@ http://sneezingtiger.com/sokoban/levels.html
 Sokoban Automatic Solver
 http://www.ic-net.or.jp/home/takaken/e/soko/
 
-
-Arduboy 1.0 infomation.
-
-AVR Memory Usage
-----------------
-Device: atmega32u4
-
-Program:   19958 bytes (60.9% Full)
-(.text + .data + .bootloader)
-
-Data:       1793 bytes (70.0% Full)
-(.data + .bss + .noinit)
